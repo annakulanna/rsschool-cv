@@ -21,13 +21,23 @@ I am a Master's degree student at the department of Mathematics and Computer Sci
 
 ## Education
 
-*University: 
-  *Brest State University, Economic cybernetics. (Bachelor's degree, 2020)
-  *Brest State University, Mathematics and Computer Sciences. (Master's degree, 2022)
-*Courses:
-  *GeekBrains “HTML / CSS. Interactive course"
-  *VRP Consulting Online course Salesforce Platform
-  *FreeCodeCamp JavaScript Algorithms and Data Structures
+* University: 
+   * Brest State University, Economic cybernetics. (Bachelor's degree, 2020)
+   * Brest State University, Mathematics and Computer Sciences. (Master's degree, 2022)
+* Courses:
+   * GeekBrains “HTML / CSS. Interactive course"
+   * VRP Consulting Online course Salesforce Platform
+   * FreeCodeCamp JavaScript Algorithms and Data Structures
+
+## Code Example
+
+```javascript
+const sortByBit = arr => arr.sort( (a, b) => a - b).sort( (a, b) =>  (count(a) - count(b)));
+
+const count = x =>  (x).toString(2).split('').filter(number => number > 0).length;
+```
+
+
 
 
 
