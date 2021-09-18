@@ -7,9 +7,9 @@
 * __Telegram__: *@Annn27*
 * __LinkedIn__: *[Anna Kulesh](https://www.linkedin.com/in/anna-kulesh-278024180/)*
 
-##About Me
+## About Me
 
-I am a Master degree student at the department of Mathematics and Computer Sciences. I’d like to become a JS Developer.
+I am a Master's degree student at the department of Mathematics and Computer Sciences. I’d like to become a JS Developer.
 
 ## Skills
 
@@ -18,6 +18,17 @@ I am a Master degree student at the department of Mathematics and Computer Scien
 * JavaScript
 * Git
 * SOLID
+
+## Education
+
+*University: 
+  *Brest State University, Economic cybernetics. (Bachelor's degree, 2020)
+  *Brest State University, Mathematics and Computer Sciences. (Master's degree, 2022)
+*Courses:
+  *GeekBrains “HTML / CSS. Interactive course"
+  *VRP Consulting Online course Salesforce Platform
+  *FreeCodeCamp JavaScript Algorithms and Data Structures
+
 
 
 
