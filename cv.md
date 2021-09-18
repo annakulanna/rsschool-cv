@@ -14,17 +14,17 @@ I am a Master's degree student at the department of Mathematics and Computer Sci
 ## Skills
 
 * __HTML__
-* CSS
-* JavaScript
-* Git
-* SOLID
+* __CSS__
+* __JavaScript__
+* __Git__
+* __SOLID__
 
 ## Education
 
-* University: 
+* __University__: 
    * Brest State University, Economic cybernetics. (Bachelor's degree, 2020)
    * Brest State University, Mathematics and Computer Sciences. (Master's degree, 2022)
-* Courses:
+* __Courses__:
    * GeekBrains “HTML / CSS. Interactive course"
    * VRP Consulting Online course Salesforce Platform
    * FreeCodeCamp JavaScript Algorithms and Data Structures
@@ -36,6 +36,12 @@ const sortByBit = arr => arr.sort( (a, b) => a - b).sort( (a, b) =>  (count(a) -
 
 const count = x =>  (x).toString(2).split('').filter(number => number > 0).length;
 ```
+
+## Languages
+
+* __Russian__ - native speaker.
+* __English__ - A2
+
 
 
 
