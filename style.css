@@ -12,16 +12,17 @@ h2 {
 
 h1 {
     text-align: center;
-    color: rgb(63, 85, 100);
+    color: rgb(159, 128, 247);
     font-size: 57px
 }
 
-p, li {
+p, li, div {
     color: rgb(218, 208, 194);
 }
 
 .block-left {
     width: 30%;
+    float: left;
 }
 
 aside {
@@ -41,6 +42,8 @@ div {
 
 .block-right {
     width: 70%;
+    color: rgba(21, 14, 44, 0.966);
+    float: right;
 }
 .cv-white {
     background-color: #f1f1ef;
@@ -63,6 +66,17 @@ body.cv {
     color: #3b3b3b;
 }
 
+
+.cv-footer {
+    display: flex;
+    align-items: center;
+}
+
+.cv-footer {
+    color: #3b3b3b;
+    background-color: #3a4743;
+}
+
 .cv-footer-item {
     width: 33.33%;
 }
@@ -71,15 +85,12 @@ body.cv {
     text-align: center;
 }
 
-div {
-    display: block;
-}
+
 .cv-footer {
     color: #3b3b3b;
     background-color: #12414d;
 }
-body.cv {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #3b3b3b;
+
+.cv-footer {
+    overflow: auto;
 }
