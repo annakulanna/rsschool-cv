@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Kulesh CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body class="cv">
+    <!--=========================================================================-->
+    <!--============================= HEADER START ==============================-->
+    <!--=========================================================================-->
+    <div class="contener">
+        <header> 
+            <nav class="cv-naw">
+                <ul>
+                  <li><a href="#abaut-me">About Me</a></li>
+                  <li><a href="#contacts">Contacts</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#code-example">Code Example</a></li>
+                  <li><a href="#laguages">Languages</a></li>
+                </ul>
+              </nav>
+        </header>
+
+
+        <!--=========================================================================-->
+        <!--============================= MAIN START ================================-->
+        <!--=========================================================================-->
+        <main>
+            <aside class="block-left">
+                <section>
+                    <figure>
+                        <img src="/img/x5ppWOutdHY.jpg" alt="Anna Kulesh">
+                    </figure>
+                    <h1>Anna Kulesh</h1>
+                </section>
+
+                <section class="cv-contacts">
+                    <h2 id="contaccts" class="contaccts">Contacts</h2>
+                    <ul>
+                        <li>Phone: +375 (25) 521-27-04</li>
+                        <li>E-mail: annakulanna@gmail.com</li>
+                        <li>Telegram: <a href="https://t.me/Annn27"></a>Anna Kulesh</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/anna-kulesh-278024180/">Anna Kulesh</a>
+                            <link>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 id="skills" class="skills">Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>SOLID</li>
+                    </ul>
+                </section>
+            </aside>
+            <!--============================-About me-=========================================-->
+            <div class="block-right">
+                <section>
+                    <h2 id="about-me" class="about-me">About Me</h2>
+                    <p>I am a Master’s degree student at the department of Mathematics and Computer Sciences.
+                        I’d like to become a JS Developer.</p>
+                </section>
+             
+
+                <section>
+                    <h2 id="education" class="education">Education</h2>
+                    <ul>
+                        <li>University:
+                            <ul>
+                                <li>Brest State University, Economic cybernetics. (Bachelor’s degree, 2020)</li>
+                                <li>Brest State University, Mathematics and Computer Sciences. (Master’s degree, 2022)</li>
+                            </ul>
+                        </li>
+                        <li>Courses:
+                            <ul>
+                                <li>GeekBrains “HTML / CSS. Interactive course”</li>
+                                <li>VRP Consulting Online course Salesforce Platform</li>
+                                <li>FreeCodeCamp JavaScript Algorithms and Data Structures</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 id="code-example" class="code-example">Code Example</h2>
+                    <pre><code class="javascript">
+                const sortByBit = arr => arr.sort( (a, b) => a - b).sort( (a, b) =>  (count(a) - count(b)));
+
+                const count = x =>  (x).toString(2).split('').filter(number => number > 0).length;
+            </code></pre>
+                    <pre><code>
+                const convert = (s) => {
+                    let set = new Set(s.toLowerCase().split(''))
+                    let arr = []
+                    let newArr = s.toLowerCase().split('')
+                    for (let value of set) {
+                      arr.push(value)
+                    } 
+                    if(arr == ''){
+                      return 0
+                    } else if (arr.length === 1){
+                      return parseInt('1'.repeat(newArr.length))
+                    }
+                    arr.unshift(...arr.splice(1, 1))
+                    return parseInt(newArr.map(value => arr.indexOf(value)).join(''))
+                }
+            </code></pre>
+                </section>
+
+                <section>
+                    <h2 id="laguages" class="laguages">Languages</h2>
+                    <ul>
+                        <li>Russian - native speaker.</li>
+                        <li>English - A2</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <!--=========================================================================-->
+        <!--============================= MAIN END ==================================-->
+        <!--=========================================================================-->
+
+        <!--=========================================================================-->
+        <!--============================= FOOTER START ==============================-->
+        <!--=========================================================================-->
+        <footer class="cv-footer">
+            <div class="cv-footer-item">
+                <a href="https://rs.school/js/">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="RS logo">
+                </a>
+            </div>
+            <div class="cv-footer-item">2021</div>
+            <div class="cv-footer-item">
+                <a href="https://github.com/annakulanna">
+                    <img src="img/25231.png" alt="git logo">
+                </a>
+            </div>
+        </footer>
+        <!--========================================================================-->
+        <!--============================= FOOTER END ================================-->
+        <!--=========================================================================-->
+    </div>
+
+</body>
+
+
+</html>
