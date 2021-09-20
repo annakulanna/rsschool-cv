@@ -17,18 +17,18 @@
     <!--=========================================================================-->
     <!--============================= HEADER START ==============================-->
     <!--=========================================================================-->
-    <div class="contener">
-        <header> 
-            <nav class="cv-naw">
-                <ul>
-                  <li><a href="#abaut-me">About Me</a></li>
-                  <li><a href="#contacts">Contacts</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#education">Education</a></li>
-                  <li><a href="#code-example">Code Example</a></li>
-                  <li><a href="#laguages">Languages</a></li>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="cv-naw">
+                    <li><a href="#abaut-me">About Me</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#code-example">Code Example</a></li>
+                    <li><a href="#laguages">Languages</a></li>
                 </ul>
-              </nav>
+            </nav>
         </header>
 
 
@@ -37,33 +37,39 @@
         <!--=========================================================================-->
         <main>
             <aside class="block-left">
-                <section>
-                    <figure>
-                        <img src="/img/x5ppWOutdHY.jpg" alt="Anna Kulesh">
-                    </figure>
+                <img src="img/1.png" alt="Anna Kulesh" class="img">
+                
                     <h1>Anna Kulesh</h1>
-                </section>
+                
 
                 <section class="cv-contacts">
                     <h2 id="contaccts" class="contaccts">Contacts</h2>
                     <ul>
                         <li>Phone: +375 (25) 521-27-04</li>
                         <li>E-mail: annakulanna@gmail.com</li>
-                        <li>Telegram: <a href="https://t.me/Annn27"></a>Anna Kulesh</li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/anna-kulesh-278024180/">Anna Kulesh</a>
-                            <link>
-                        </li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/anna-kulesh-278024180/">Anna Kulesh</a></li>
+                        <li>Telegram: <a href="https://t.me/Annn27">Anna Kulesh</a></li>
                     </ul>
                 </section>
 
                 <section>
                     <h2 id="skills" class="skills">Skills</h2>
                     <ul>
+                        
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>Git</li>
                         <li>SOLID</li>
+                    </ul>
+                </section>
+
+                
+                <section>
+                    <h2 id="laguages" class="laguages">Languages</h2>
+                    <ul>
+                        <li>Russian - native speaker.</li>
+                        <li>English - A2</li>
                     </ul>
                 </section>
             </aside>
@@ -74,7 +80,7 @@
                     <p>I am a Master’s degree student at the department of Mathematics and Computer Sciences.
                         I’d like to become a JS Developer.</p>
                 </section>
-             
+
 
                 <section>
                     <h2 id="education" class="education">Education</h2>
@@ -82,7 +88,8 @@
                         <li>University:
                             <ul>
                                 <li>Brest State University, Economic cybernetics. (Bachelor’s degree, 2020)</li>
-                                <li>Brest State University, Mathematics and Computer Sciences. (Master’s degree, 2022)</li>
+                                <li>Brest State University, Mathematics and Computer Sciences. (Master’s degree, 2022)
+                                </li>
                             </ul>
                         </li>
                         <li>Courses:
@@ -98,37 +105,35 @@
                 <section>
                     <h2 id="code-example" class="code-example">Code Example</h2>
                     <pre><code class="javascript">
-                const sortByBit = arr => arr.sort( (a, b) => a - b).sort( (a, b) =>  (count(a) - count(b)));
+const sortByBit = arr => arr.sort( (a, b) => a - b).sort( (a, b) =>  (count(a) - count(b)));
 
-                const count = x =>  (x).toString(2).split('').filter(number => number > 0).length;
+const count = x =>  (x).toString(2).split('').filter(number => number > 0).length;
             </code></pre>
                     <pre><code>
-                const convert = (s) => {
-                    let set = new Set(s.toLowerCase().split(''))
-                    let arr = []
-                    let newArr = s.toLowerCase().split('')
-                    for (let value of set) {
-                      arr.push(value)
-                    } 
-                    if(arr == ''){
-                      return 0
-                    } else if (arr.length === 1){
-                      return parseInt('1'.repeat(newArr.length))
-                    }
-                    arr.unshift(...arr.splice(1, 1))
-                    return parseInt(newArr.map(value => arr.indexOf(value)).join(''))
-                }
+   const convert = (s) => {
+   let set = new Set(s.toLowerCase().split(''))
+   let arr = []
+   let newArr = s.toLowerCase().split('')
+   
+   for (let value of set) {
+      arr.push(value)
+   } 
+
+   if(arr == ''){
+      return 0
+   } else if (arr.length === 1){
+      return parseInt('1'.repeat(newArr.length))
+   }
+
+   arr.unshift(...arr.splice(1, 1))
+
+   return parseInt(newArr.map(value => arr.indexOf(value)).join(''))
+}
             </code></pre>
                 </section>
 
-                <section>
-                    <h2 id="laguages" class="laguages">Languages</h2>
-                    <ul>
-                        <li>Russian - native speaker.</li>
-                        <li>English - A2</li>
-                    </ul>
-                </section>
             </div>
+
         </main>
         <!--=========================================================================-->
         <!--============================= MAIN END ==================================-->
@@ -140,13 +145,13 @@
         <footer class="cv-footer">
             <div class="cv-footer-item">
                 <a href="https://rs.school/js/">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="RS logo">
+                    <img class="img_footer" src="https://rs.school/images/rs_school_js.svg" alt="RS logo">
                 </a>
             </div>
             <div class="cv-footer-item">2021</div>
             <div class="cv-footer-item">
                 <a href="https://github.com/annakulanna">
-                    <img src="img/25231.png" alt="git logo">
+                    <img class="img_footer" src="img/25231.png" alt="git logo">
                 </a>
             </div>
         </footer>
